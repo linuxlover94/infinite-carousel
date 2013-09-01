@@ -1,0 +1,55 @@
+<!-- Authour >> Ved prakash Pandey
+	FB >> https://www.facebook.com/thelinuxian
+	license CC Attribution-Share Alike 3.0 - http://creativecommons.org/licenses/by-sa/3.0/
+	"HAIL LINUX AND HAIL OPEN SOURCE"
+ -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Infinite Carousel Demo</title>
+		<script type="text/javascript" src="jquery-1.10.2.min.js"></script> <!-- I included the jquery ocally so that you can use this without internet too -->
+		<script type="text/javascript" src="jquery.infinitecarousel.js"></script><!-- Heres the Magic -->
+		<script type="text/javascript">
+			$(function() {
+				$('#carousel1').infiniteCarousel({	<!-- Do Some editing here to bring the changes in your Carousel -->
+					displayThumbnailNumbers : 1,
+					displayThumbnailBackground : 0,
+					thumbnailWidth : '40px',
+					thumbnailHeight : '40px',
+					thumbnailFontSize : '1em' 
+				});
+			});
+
+		</script>
+		<link rel = "stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div id = "carousel1"> <!-- Main Wrapper -->
+			<ul>
+				<li>
+					<img src="igi slideshow/IGI2_logo_800x600.jpg" width="400" height="300" alt="">
+					<p>
+						Welcome to the great and challenging world of Project IGI: I'M GOING IN
+					</p>
+				</li>
+				<li><img src="igi slideshow/IGI_Hardware_800x600.jpg" width="400" height="300" alt="">
+				
+				
+				<p>This is a Combine view of all Hardware in the Game
+				</p></li>
+				<li><img src="igi slideshow/Jones_G36_800x600.jpg" width="400" height="300" alt="">
+					<p>
+						Here is our Joens With a G36 Assault Rifle
+					</p>
+				</li>
+				<li><img src="igi slideshow/Multiplayer_800x600.jpg" width="400" height="300" alt="">
+					<p>
+						You can Play Multiplayer Game Also
+					</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
